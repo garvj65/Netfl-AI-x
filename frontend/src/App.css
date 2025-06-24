@@ -1,0 +1,63 @@
+/* Netflix Clone App Styles */
+.App {
+  background-color: #141414;
+  color: white;
+  min-height: 100vh;
+}
+
+/* Hero Section Styles */
+.hero-gradient {
+  background: linear-gradient(
+    77deg,
+    rgba(0, 0, 0, 0.6) 0%,
+    transparent 85%
+  );
+}
+
+/* Content Row Hover Effects */
+.content-card {
+  transition: transform 0.3s ease, z-index 0.3s ease;
+}
+
+.content-card:hover {
+  transform: scale(1.3);
+  z-index: 10;
+}
+
+/* Modal Backdrop */
+.modal-backdrop {
+  backdrop-filter: blur(8px);
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* AI Concierge Chat */
+.chat-bubble {
+  backdrop-filter: blur(10px);
+  background: rgba(30, 30, 30, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Netflix Red Glow Effect */
+.netflix-glow {
+  box-shadow: 0 0 20px rgba(229, 9, 20, 0.3);
+}
+
+/* Content Row Scrolling */
+.content-row {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.content-row::-webkit-scrollbar {
+  display: none;
+}
+
+/* Video Player Overlay */
+.video-overlay {
+  background: linear-gradient(
+    0deg,
+    rgba(20, 20, 20, 0.8) 0%,
+    transparent 60%,
+    rgba(20, 20, 20, 0.8) 100%
+  );
+}
