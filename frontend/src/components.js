@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
   PlayIcon, 
@@ -12,8 +12,26 @@ import {
   SpeakerXMarkIcon,
   PlusIcon,
   HandThumbUpIcon,
-  HandThumbDownIcon
+  HandThumbDownIcon,
+  CheckIcon,
+  AdjustmentsHorizontalIcon,
+  StarIcon,
+  ClockIcon,
+  CalendarIcon,
+  FilmIcon,
+  TvIcon,
+  UserCircleIcon,
+  Cog6ToothIcon,
+  ArrowRightIcon,
+  ArrowLeftIcon,
+  EyeIcon,
+  ShareIcon,
+  SpeakerXMarkIcon as MutedIcon,
+  ChevronDownIcon,
+  FunnelIcon
 } from '@heroicons/react/24/solid';
+import { useProfiles, useWatchlist, useSearch, useRating, useKeyboardNavigation } from './hooks';
+import { utils } from './utils';
 
 // Mock data for Netflix content
 const mockContent = {
